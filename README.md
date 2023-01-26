@@ -42,3 +42,6 @@ combination between "pretteir", "lint" and "jasmine"
 all used functions located in ./src/utitities/fileHandler.ts
 which contains input & output paths and all functions that
 handle filename, files directories and files existance
+
+### Demo Video
+https://drive.google.com/file/d/18snnWbvxJoTdRD8yIEXrBsNzpU5l5xCN/view?usp=share_link
