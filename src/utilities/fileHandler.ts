@@ -1,4 +1,4 @@
-import { existsSync, promises as fs } from "fs";
+import { existsSync, mkdirSync, promises as fs } from "fs";
 import path from "path";
 import sharp from "sharp";
 
@@ -40,6 +40,7 @@ export async function resizeFile(
   width: number,
   height: number
 ): Promise<string> {
+  if (!existsSync(assetsThumbPath)) mkdirSync(assetsThumbPath);
   const newFilename = createFilename(filename, width, height);
   const outputUrlPath = generateOutputUrl(newFilename);
 
